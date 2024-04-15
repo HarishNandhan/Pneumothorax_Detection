@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h1>Pneumothorax Segmentation Result</h1>
+    {% if mask %}
+        <img src="{{ mask }}" alt="Pneumothorax Mask">
+        <p>{{ message }}</p>
+    {% else %}
+        <p>No pneumothorax detected.</p>
+    {% endif %}
+</body>
+</html>
